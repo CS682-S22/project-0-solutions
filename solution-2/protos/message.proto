@@ -1,0 +1,17 @@
+syntax = "proto3";
+// Protobuf definition for message
+
+// reviewed this example code on how to create a proto file
+// https://github.com/CS682-S22/code-examples/blob/master/ProtocolBuffersExample/protos/studentinfo.proto
+
+
+// compile with
+// protoc --java_out=src/main/java/ protos/message.proto
+
+option java_package = "messaging.protos";
+option java_outer_classname = "MessageInfo";
+
+// The message message
+message Message {
+  string text = 1;
+}

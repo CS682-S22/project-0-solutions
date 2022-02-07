@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+//from root directory compile this as follows:
+//protoc --java_out=src/main/java/ project0.protos/content.proto
+
+option java_package = "project0.protos";
+option java_outer_classname = "Content";
+
+
+message Body {
+  bytes text = 1;
+}
